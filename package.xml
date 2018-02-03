@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>horus_patrol</name>
+  <version>0.1.0</version>
+  <description>The horus_patrol package</description>
+
+  <maintainer email="rgoulartns@gmail.com">RGoulart</maintainer>
+
+  <license>MIT</license>
+
+  <author email="rgoulartns@gmail.com">Rafael Goulart</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>qt_build</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sounds/TDetected.wav</file>
+    </qresource>
+</RCC>

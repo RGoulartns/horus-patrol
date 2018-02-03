@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/buttons/stop.jpg</file>
+        <file>images/buttons/down.jpg</file>
+        <file>images/buttons/left.jpg</file>
+        <file>images/buttons/right.jpg</file>
+        <file>images/buttons/up.jpg</file>
+        <file>images/camera/camera (green).svg</file>
+        <file>images/camera/camera (grey).svg</file>
+        <file>images/camera/camera (red).svg</file>
+        <file>images/kinect/kinect (green).svg</file>
+        <file>images/kinect/kinect (grey).svg</file>
+        <file>images/kinect/kinect (red).svg</file>
+        <file>images/motor/motor (green).svg</file>
+        <file>images/motor/motor (grey).svg</file>
+        <file>images/motor/motor (red).svg</file>
+        <file>images/steering wheel/steering-wheel (green).svg</file>
+        <file>images/steering wheel/steering-wheel (grey).svg</file>
+        <file>images/steering wheel/steering-wheel (red).svg</file>
+        <file>images/streams/audio/audio (green).svg</file>
+        <file>images/streams/audio/audio (grey).svg</file>
+        <file>images/streams/audio/audio (red).svg</file>
+        <file>images/streams/microphone/microphone (green).svg</file>
+        <file>images/streams/microphone/microphone (grey).svg</file>
+        <file>images/streams/microphone/microphone (red).svg</file>
+        <file>images/streams/video/video (green).svg</file>
+        <file>images/streams/video/video (grey).svg</file>
+        <file>images/streams/video/video (red).svg</file>
+        <file>images/video record/video record (green).svg</file>
+        <file>images/video record/video record (grey).svg</file>
+        <file>images/video record/video record (red).svg</file>
+        <file>images/nomap.gif</file>
+        <file>images/turtlebot.png</file>
+    </qresource>
+</RCC>
