@@ -1,29 +1,76 @@
-cmake_minimum_required(VERSION 2.8.11)
-project(horus_patrol)
+cmake_minimum_required(VERSION 3.5)
+project(horus_patrol LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
 set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
 
-find_package(catkin REQUIRED COMPONENTS qt_build roscpp image_transport cv_bridge rviz std_msgs)
-find_package(Qt5Widgets)
-find_package(Qt5Sql)
-find_package(Qt5Multimedia)
+set (CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(${catkin_INCLUDE_DIRS})
-include_directories(${OpenCV_INCLUDE_DIRS})
-include_directories(${Qt5Widgets_INCLUDE_DIRS})
+IF (NOT DEFINED BUILD_VERSION)
+SET(BUILD_VERSION "not set")
+ENDIF()
+ADD_DEFINITIONS(-DBUILD_VERSION="${BUILD_VERSION}")
 
-catkin_package()
+if(NOT WIN32)
+  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -Wextra -fPIC")
+endif()
 
-file(GLOB QT_FORMS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ui/*.ui)
-file(GLOB QT_RESOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} resources/*.qrc)
-file(GLOB_RECURSE QT_MOC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS include/horus_patrol/*.hpp)
-file(GLOB_RECURSE QT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/*.cpp)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-qt5_add_resources(QT_RESOURCES_CPP ${QT_RESOURCES})
-qt5_wrap_ui(QT_FORMS_HPP ${QT_FORMS})
-qt5_wrap_cpp(QT_MOC_HPP ${QT_MOC})
+find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_ros REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(robot_msgs REQUIRED)
 
-add_executable(horus_patrol ${QT_SOURCES} ${QT_RESOURCES_CPP} ${QT_FORMS_HPP} ${QT_MOC_HPP})
-target_link_libraries(horus_patrol ${catkin_LIBRARIES} Qt5::Widgets Qt5::Sql Qt5::Multimedia)
-install(TARGETS horus_patrol RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+find_package(Qt5Core REQUIRED)
+find_package(Qt5Quick REQUIRED)
+find_package(Qt5Gui REQUIRED)
+find_package(Qt5Qml REQUIRED)
+
+
+set(SRC_FILES
+  src/main.cpp
+  src/robot.cpp
+  src/ros_node.cpp
+  )
+
+set(RES_FILES
+  res/res.qrc
+  )
+
+add_executable(horus_patrol
+  ${SRC_FILES}
+  ${RES_FILES}
+  )
+
+target_include_directories(${PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+  )
+
+ament_target_dependencies(${PROJECT_NAME}
+  "rclcpp"
+  "std_msgs"
+  "robot_msgs"
+  )
+
+target_link_libraries(${PROJECT_NAME}
+  Qt5::Core
+  Qt5::Quick
+  Qt5::Qml
+  Qt5::Gui
+  ${rclcpp_LIBRARIES}
+  )
+
+install(TARGETS ${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}
+  )
+
+ament_package()

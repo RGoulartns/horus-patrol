@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file alias="batt_100">images/battery/battery_100.svg</file>
+    </qresource>
+</RCC>

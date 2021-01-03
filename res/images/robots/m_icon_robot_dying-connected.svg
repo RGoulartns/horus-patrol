@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="m_icon_robot_dying-connected.svg"
+   id="svg11"
+   version="1.1"
+   viewBox="0 0 64 64"
+   height="16.9312mm"
+   width="16.9312mm">
+  <metadata
+     id="metadata17">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg11"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="31.995969"
+     inkscape:cx="17.503677"
+     inkscape:zoom="13.282923"
+     showgrid="false"
+     id="namedview13"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     d="M 43.38,6.50            C 43.38,6.50 50.56,12.56 50.56,12.56              50.56,12.56 50.44,51.44 50.44,51.44              50.44,51.44 45.44,54.44 45.44,54.44              45.44,54.44 18.38,54.50 18.38,54.50              18.38,54.50 13.56,51.62 13.56,51.62              13.56,51.62 13.50,12.56 13.50,12.56              13.50,12.56 20.44,6.56 20.44,6.56              20.44,6.56 43.38,6.50 43.38,6.50 Z"
+     stroke-width="8"
+     stroke="#ffea8e"
+     fill="none"
+     id="connected" />
+  <path
+     style="fill:#98983e;fill-opacity:1"
+     d="M 43.38,6.50            C 43.38,6.50 50.56,12.56 50.56,12.56              50.56,12.56 50.44,51.44 50.44,51.44              50.44,51.44 45.44,54.44 45.44,54.44              45.44,54.44 18.38,54.50 18.38,54.50              18.38,54.50 13.56,51.62 13.56,51.62              13.56,51.62 13.50,12.56 13.50,12.56              13.50,12.56 20.44,6.56 20.44,6.56              20.44,6.56 43.38,6.50 43.38,6.50 Z"
+     stroke-width="1"
+     stroke="black"
+     fill="#989898"
+     id="outline" />
+  <path
+     d="M 21.53,6.56            C 21.53,6.56 21.50,54.47 21.50,54.47M 42.50,54.50            C 42.50,54.50 42.50,6.50 42.50,6.50"
+     stroke-width="1"
+     stroke="black"
+     fill="none"
+     id="v_lines" />
+  <path
+     d="M 45.41,54.44            C 45.41,54.44 45.44,55.53 45.44,55.53              45.44,55.53 44.47,56.47 44.47,56.47              44.47,56.47 19.44,56.53 19.44,56.53              19.44,56.53 18.42,55.59 18.42,55.59              18.42,55.59 18.41,54.53 18.41,54.53M 50.40,55.90"
+     stroke-width="1"
+     stroke="black"
+     fill="none"
+     id="rear_bar" />
+  <path
+     d="M 21.55,25.17            C 18.91,28.91 21.87,30.85 23.45,29.83              24.88,28.92 25.70,24.61 21.55,25.17 Z"
+     stroke-width="1"
+     stroke="white"
+     fill="white"
+     id="eye_left" />
+  <path
+     d="M 40.55,25.17            C 37.91,28.91 40.87,30.85 42.45,29.83              43.88,28.92 44.70,24.61 40.55,25.17 Z"
+     stroke-width="1"
+     stroke="white"
+     fill="white"
+     id="eye_right" />
+  <path
+     d="M 42.00,32.00            C 42.00,32.00 41.00,33.00 41.00,33.00              41.00,33.00 41.00,35.00 41.00,35.00              41.00,35.00 42.00,36.00 42.00,36.00              42.00,36.00 44.00,36.00 44.00,36.00              44.00,36.00 45.00,35.00 45.00,35.00              45.00,35.00 45.00,33.00 45.00,33.00              45.00,33.00 44.00,32.00 44.00,32.00              44.00,32.00 42.00,32.00 42.00,32.00 Z            M 38.44,36.56            C 38.44,36.56 41.01,35.01 41.01,35.01"
+     stroke-width="1"
+     stroke="white"
+     fill="white"
+     id="thermometer" />
+  <path
+     d="M 20.81,40.06            C 20.81,40.06 20.81,37.94 25.62,36.62              30.44,35.31 37.75,36.44 37.75,36.44              40.62,37.19 41.69,38.25 43.44,39.88"
+     stroke-width="1"
+     stroke="white"
+     fill="none"
+     id="dying_frown" />
+</svg>

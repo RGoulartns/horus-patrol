@@ -1,24 +1,23 @@
 <?xml version="1.0"?>
-<package format="2">
-  <name>horus_patrol</name>
-  <version>0.1.0</version>
-  <description>The horus_patrol package</description>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+    <name>horus_patrol</name>
+    <version>0.0.0</version>
+    <description>Horus Patrol</description>
+    <maintainer email="rgoulartns@gmail.com">Rafael Goulart</maintainer>
+    <license>TODO</license>
 
-  <maintainer email="rgoulartns@gmail.com">RGoulart</maintainer>
+    <buildtool_depend>ament_cmake_ros</buildtool_depend>
 
-  <license>MIT</license>
+    <build_depend>qtbase5-dev</build_depend>
+    <exec_depend>libqt5-core</exec_depend>
 
-  <author email="rgoulartns@gmail.com">Rafael Goulart</author>
+    <depend>rclcpp</depend>
+    <depend>std_msgs</depend>
+    <depend>robot_msgs</depend>
 
-  <buildtool_depend>catkin</buildtool_depend>
-  <depend>roscpp</depend>
-  <depend>qt_build</depend>
-  <depend>cv_bridge</depend>
-  <depend>image_transport</depend>
+    <export>
+        <build_type>ament_cmake</build_type>
+    </export>
 
-  <!-- The export tag contains other, unspecified, tags -->
-  <export>
-    <!-- Other tools can request additional information be placed here -->
-
-  </export>
 </package>
