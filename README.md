@@ -3,4 +3,4 @@ Horus Patrol is a robotic system designed to perform surveillance of an indoor e
 
 Project developed with ROS2 Foxy + Qt 5.12.2 + MySQL  
 
-Usage Example (Legacy): https://www.youtube.com/watch?v=uipwF1RvNNM  
+Usage Example (Legacy): [Video](https://www.youtube.com/watch?v=uipwF1RvNNM)
