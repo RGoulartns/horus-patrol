@@ -1,8 +1,14 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
     </qresource>
-    <qresource prefix="/img">
-        <file alias="batt_100">images/battery/battery_100.svg</file>
+    <qresource prefix="/form">
+        <file alias="Home.ui.qml">form/Home.ui.qml</file>
+        <file alias="Mapping.ui.qml">form/Mapping.ui.qml</file>
+        <file alias="Patrolling.ui.qml">form/Patrolling.ui.qml</file>
+    </qresource>
+    <qresource prefix="/view">
+        <file alias="UserAccess.qml">view/UserAccess.qml</file>
     </qresource>
 </RCC>
